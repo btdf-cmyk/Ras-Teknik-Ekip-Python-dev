@@ -1,0 +1,6 @@
+isim = input("İsminizi giriniz: ")
+soyisim = input("Soyisminizi giriniz: ")
+numara = input("Numaranızı giriniz: ")
+ders = input("Ders adı giriniz: ")
+ortalama = input("Ortalamanızı giriniz: ")
+print(f"{isim} {soyisim} isimli {numara} numaralı öğrenci {ders} dersinden bu dönem sonunda {ortalama} ortalama başarmıştır.")
