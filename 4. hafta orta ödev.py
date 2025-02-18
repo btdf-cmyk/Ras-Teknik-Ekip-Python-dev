@@ -17,10 +17,6 @@ class Silah(EnvanterEşyası):
            print(f"{self.isim} kullanıldı. Kalan dayanıklılık:{self.dayanıklılık}")   
     def bilgi(self):
         print(f"Silah: {self.isim} | hasar: {self.hasar} | ağırlık: {self.ağırlık}")
-                
-
-
-
 class Zırh(EnvanterEşyası):
     def __init__(self, isim, dayanıklılık, koruma, ağırlık):
         super().__init__(isim, ağırlık)
@@ -31,10 +27,6 @@ class Zırh(EnvanterEşyası):
             print(f"{self.isim} kullanıldı. Kalan dayanıklılık:{self.dayanıklılık}")
     def bilgi(self):
             print(f"Zırh: {self.isim} | Koruma: {self.koruma} | ağırlık: {self.ağırlık} | dayanıklılık: {self.dayanıklılık}")
-
-
-
-
 class Oyuncu:
     def __init__(self, isim, ağırlık, *args):
         self.isim = isim
@@ -48,11 +40,4 @@ class Oyuncu:
         print(f"Toplam Ağırlık: {toplam_ağırlık}")
         for esya in self.eşyalar:
             esya.bilgi()    
-            silah1 = Silah("Kılıç", 25, 10, 100)
-    zırh1 = Zırh("Zırh", 75, 50, 15)
-
-    # Oyuncu oluştur ve eşyaları ekle
-    oyuncu1 = Oyuncu("Ahmet", 90, silah1, zırh1)
-
-    # Envanteri göster
-    oyuncu1.envanter_göster()
+           
